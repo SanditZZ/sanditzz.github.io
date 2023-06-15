@@ -64,6 +64,7 @@ p {
   line-height: 1.9rem;
 }
 
+/* Reveal Elements on Scroll Down */
 .reveal {
   position: relative;
   transform: translateY(150px);
@@ -75,6 +76,35 @@ p {
   transform: translateY(0px);
   opacity: 1;
 }
+
+/* End of Reveal Elements on Scroll Down */
+
+/* Scroll Up Button */
+.scrollTop {
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: #5757575b;
+  border-radius: 50%;
+  background-size: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.scrollTop.active {
+  bottom: 40px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* End of Scroll Up Button */
 
 /* HEADER */
 /* .header {
