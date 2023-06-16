@@ -4,13 +4,21 @@ html {
   scroll-snap-type: y mandatory; */
 }
 
-/* CUSTOM SCROLLBARS  */
+/* Variables */
+:root {
+  --primary-color: #F07611;
+  --primary-text-color: #F99644;
+}
 
+/* End of Variables */
+
+/* CUSTOM SCROLLBAR */
+/* 
 ::-webkit-scrollbar {
-  /* display: none; */
-  /* width: 0.7em;
+  display: none;
+  width: 0.7em;
   height: 15px;
-  overflow: auto; */
+  overflow: auto;
 }
 
 ::-webkit-scrollbar-track {
@@ -27,7 +35,8 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #717171;
-}
+} 
+*/
 
 /* End of Custom Scrollbar */
 
@@ -59,7 +68,7 @@ body {
 }
 
 p {
-  color: rgb(255, 255, 255);
+  color: var(--primary-text-color);
   text-align: left;
   font-size: 1.4rem;
   line-height: 1.9rem;
@@ -141,9 +150,17 @@ nav {
   z-index: 10;
 }
 
+/* Home Logo in Nav Bar */
+
 .home-logo-container {
   width: 200px;
   height: 25px;
+}
+
+.home-logo-container:hover {
+  cursor: pointer;
+  transition: .6s;
+  transform: scale(1.1);
 }
 
 .home-logo {
@@ -154,6 +171,8 @@ nav {
   filter: invert(.5);
   text-decoration: none;
 }
+
+/* End of Home Logo in Nav Bar */
 
 /* Middle Area in Nav Bar */
 .nav-middle-buttons {
@@ -172,9 +191,10 @@ nav {
   list-style-type: none;
   display: inline-block;
   padding: 10px 25px;
-  background-color: rgb(215, 221, 243);
-  border: none;
-  border-radius: 25px;
+  /* background-color: rgba(255, 255, 255, 0.466); */
+  border: 0.2rem solid;
+  border-color: #ddddddd3;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -237,7 +257,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #FD6104;
+  color: var(--primary-color);
   transition: .4s;
 }
 
@@ -258,7 +278,7 @@ nav ul li a:hover {
 }
 
 .top-social i:hover {
-  color: rgb(236, 69, 3);
+  color: var(--primary-color);
   transition: .6s;
   transform: scale(1.2);
 }
@@ -306,12 +326,11 @@ nav ul li a:hover {
   width: fit-content;
   font-size: 4rem;
   position: relative;
-  color: #01cad4;
+  color: var(--primary-color);
 }
 
 #hero p {
   font-size: 2rem;
-  color: #faf7f7;
 }
 
 /* End of Hero Section */
@@ -404,7 +423,6 @@ nav ul li a:hover {
 
 
 /* Service Section */
-#services {}
 
 #services .services {
   flex-direction: column;
@@ -429,7 +447,6 @@ nav ul li a:hover {
 }
 
 #services .service-top p {
-  color: black;
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
@@ -489,7 +506,7 @@ nav ul li a:hover {
 
 /* End of Service Section */
 
-/* Middle Body Section */
+/* Promotion Section */
 .middlebody {
   background-color: rgb(215, 221, 243);
   padding: 100px 100px 180px;
@@ -506,12 +523,11 @@ nav ul li a:hover {
 /* Text in Middlebody Content */
 .middlebody .content h2 {
   font-size: 3em;
-  color: #009EA7;
+  color: var(--primary-color);
 }
 
 .middlebody .content p {
   font-size: 1em;
-  color: black;
 }
 
 .middlebody .content a {
@@ -541,6 +557,7 @@ nav ul li a:hover {
   justify-content: center;
   padding: 140px 120px 200px;
   background-color: #000;
+  border: 1rem solid;
 }
 
 .contact-text p {
@@ -558,7 +575,7 @@ nav ul li a:hover {
 }
 
 .low-social i:hover {
-  color: rgb(236, 69, 3);
+  color: var(--primary-color);
   transition: .6s;
   transform: scale(1.2);
 }
@@ -570,7 +587,7 @@ nav ul li a:hover {
 /* Button */
 
 .button:hover {
-  color: #FD6104;
+  color: var(--primary-color);
   transform: scale(1.1);
   cursor: pointer;
   transition: .6s;
@@ -670,6 +687,12 @@ nav ul li a:hover {
 }
 
 @media (max-width:750px) {
+  .scrollTop {
+    bottom: 0px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+  }
 
   nav ul li {
     list-style-type: none;
