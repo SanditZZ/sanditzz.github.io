@@ -50,6 +50,7 @@ img {
 }
 
 body {
+  margin: 0;
   color: #ffffff;
   font-family: 'Kanit', sans-serif;
   /* font-family: 'M PLUS 1', sans-serif; */
