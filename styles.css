@@ -350,7 +350,7 @@ nav ul li a:hover::before {
 .carousel {
   position: relative;
   height: 600px;
-  width: 60%;
+  width: 45%;
   margin: 0 auto;
 }
 
@@ -361,9 +361,8 @@ nav ul li a:hover::before {
 }
 
 .carousel__track-container {
-  background: lightgreen;
   height: 100%;
-  position: relative;
+  width: 70%;
 }
 
 .carousel__track {
@@ -410,12 +409,12 @@ nav ul li a:hover::before {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.3);
   margin: 0 12px;
 }
 
 .carousel__indicator.current-slide {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 /* End of Carousel Section */
@@ -543,25 +542,64 @@ nav ul li a:hover::before {
 }
 
 /* Service Bottom Section - Cards */
-#services .service-bottom {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+#services .service-bottom-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
   padding: 0px 10px;
   border-radius: 10px;
 }
 
+#services .service-item:nth-child(1) {
+  grid-area: one;
+}
+
+#services .service-item:nth-child(2) {
+  grid-area: two;
+}
+
+#services .service-item:nth-child(3) {
+  grid-area: three;
+}
+
+#services .service-item:nth-child(4) {
+  grid-area: four;
+}
+
+#services .service-item:nth-child(5) {
+  grid-area: five;
+}
+
+@media (min-width: 30em) {
+  #services .service-bottom-grid {
+    grid-template-areas:
+      'one one'
+      'two five'
+      'three five'
+      'four four'
+  }
+}
+
+@media (min-width: 60em) {
+  #services .service-bottom-grid {
+    grid-template-areas:
+      'one one two five'
+      'three four four five'
+  }
+}
+
 #services .service-item {
-  display: flex;
-  flex: 1;
   border-radius: 10px;
-  justify-content: center;
-  flex-direction: column;
   padding: 30px;
   background-image: url(./img/car1low.jpg);
   background-size: cover;
   background-position: 30%;
-  margin: 30px 25px;
   position: relative;
   z-index: 1;
 }
