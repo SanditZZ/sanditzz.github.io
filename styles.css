@@ -8,6 +8,7 @@ html {
 :root {
   --primary-color: #F07611;
   --primary-text-color: #F99644;
+  --seconday-text-color: white;
 }
 
 /* End of Variables */
@@ -68,6 +69,8 @@ img {
 
 body {
   margin: 0;
+  background: rgb(5, 1, 3);
+  background: radial-gradient(circle, rgba(5, 1, 3, 1) 0%, rgba(0, 27, 59, 1) 100%);
   color: #ffffff;
   font-family: 'Kanit', sans-serif;
   /* font-family: 'M PLUS 1', sans-serif; */
@@ -152,8 +155,8 @@ nav {
   top: 0;
   width: 100%;
   align-items: center;
-  padding: 15px 50px;
-  background: white;
+  padding: 1px 50px;
+  background: rgb(255, 255, 255);
   transition: .5s;
   z-index: 10;
 }
@@ -200,7 +203,7 @@ nav {
   display: inline-block;
   padding: 10px 25px;
   /* background-color: rgba(255, 255, 255, 0.466); */
-  border: 0.2rem solid;
+  /* border: 0.2rem solid; */
   border-color: #ddddddd3;
   border-radius: 10px;
   cursor: pointer;
@@ -216,6 +219,49 @@ nav ul li:hover {
   transition: .6s;
 }
 
+/* Middle texts inside the boxes in Header Nav Bar */
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+  transition: .4s;
+}
+
+/* Social Media Buttons Top Nav Bar */
+.socialtop {
+  float: right;
+  padding-right: 150px;
+}
+
+.top-social {
+  padding: 14px 15pxs;
+}
+
+/* Individual Social Media Buttons Top Nav Bar */
+.top-social a {
+  padding: 10px;
+  color: black;
+}
+
+.top-social i:hover {
+  color: var(--primary-color);
+  transition: .6s;
+  transform: scale(1.2);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
 /* Nav Bar Hover Line Effect */
 
 nav ul li a::after {
@@ -223,7 +269,7 @@ nav ul li a::after {
   position: absolute;
   width: 100%;
   height: 0.1rem;
-  background-color: #000;
+  background-color: #000000;
   bottom: 0;
   left: 0;
 }
@@ -256,56 +302,12 @@ nav ul li a:hover::before {
 } */
 
 
-/* Middle texts inside the boxes in Header Nav Bar */
-nav ul li a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-}
-
-nav ul li a:hover {
-  color: var(--primary-color);
-  transition: .4s;
-}
-
-/* Social Media Buttons Top Nav Bar */
-.socialtop {
-  float: right;
-  padding-right: 200px;
-}
-
-.top-social {
-  padding: 14px 15pxs;
-}
-
-/* Individual Social Media Buttons Top Nav Bar */
-.top-social a {
-  padding: 10px;
-  color: black;
-}
-
-.top-social i:hover {
-  color: var(--primary-color);
-  transition: .6s;
-  transform: scale(1.2);
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-
-/* Hero Section */
+/* HERO Section */
 #hero {
-  background-image: url(./img/space.jpg);
+  /* background-image: url(./img/space.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   position: relative;
   z-index: 1;
 }
@@ -317,9 +319,9 @@ nav ul li a:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  /* background-color: black;
   opacity: .35;
-  z-index: -1;
+  z-index: -1; */
 }
 
 #hero .hero {
@@ -334,11 +336,12 @@ nav ul li a:hover {
   width: fit-content;
   font-size: 4rem;
   position: relative;
-  color: var(--primary-color);
+  color: var(--primary-text-color);
 }
 
 #hero p {
   font-size: 2rem;
+  color: var(--seconday-text-color);
 }
 
 /* End of Hero Section */
@@ -512,13 +515,13 @@ nav ul li a:hover {
   text-align: center;
   max-width: 1500px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 10px 0;
 }
 
 #services .section-title {
   font-size: 4rem;
-  font-weight: 300;
-  color: rgb(0, 0, 0);
+  font-weight: 400;
+  color: var(--primary-text-color);
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: .5rem;
@@ -530,31 +533,35 @@ nav ul li a:hover {
 }
 
 #services .service-top p {
-  font-size: 1.4rem;
-  margin-top: 5px;
+  font-size: 2rem;
+  color: var(--seconday-text-color);
+  text-align: center;
+  margin: 50px 100px;
   line-height: 2.5rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
 }
 
+/* Service Bottom Section - Cards */
 #services .service-bottom {
   display: flex;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
-  flex-wrap: wrap;
+  padding: 0px 10px;
+  border-radius: 10px;
 }
 
 #services .service-item {
-  flex-basis: 80%;
   display: flex;
-  align-items: flex-start;
+  flex: 1;
+  border-radius: 10px;
   justify-content: center;
   flex-direction: column;
   padding: 30px;
-  border-radius: 10px;
   background-image: url(./img/car1low.jpg);
   background-size: cover;
-  margin: 10px 5%;
+  background-position: 30%;
+  margin: 30px 25px;
   position: relative;
   z-index: 1;
 }
@@ -566,6 +573,7 @@ nav ul li a:hover {
   top: 0;
   height: 100%;
   width: 100%;
+  border-radius: 10px;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: .5;
   z-index: -1;
@@ -581,18 +589,22 @@ nav ul li a:hover {
 
 #services .service-item h2 {
   font-size: 2rem;
-  color: white;
+  color: var(--primary-text-color);
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+}
+
+#services .service-item p {
+  text-align: center;
+  color: var(--seconday-text-color);
 }
 
 /* End of Service Section */
 
 /* Promotion Section */
 .middlebody {
-  background-color: rgb(215, 221, 243);
-  padding: 100px 100px 180px;
+  padding: 10px 100px 100px;
   min-height: 80vh;
   display: flex;
   justify-content: center;
@@ -606,11 +618,12 @@ nav ul li a:hover {
 /* Text in Middlebody Content */
 .middlebody .content h2 {
   font-size: 3em;
-  color: var(--primary-color);
+  color: var(--primary-text-color);
 }
 
 .middlebody .content p {
   font-size: 1em;
+  color: var(--seconday-text-color);
 }
 
 .middlebody .content a {
@@ -639,22 +652,28 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   padding: 140px 120px 200px;
-  background-color: #000;
-  border: 1rem solid;
+}
+
+.contact-text h2 {
+  color: var(--primary-text-color);
+  text-align: center;
 }
 
 .contact-text p {
   font-size: 1em;
+  text-align: center;
+  color: var(--seconday-text-color);
 }
 
 /* Bottom social media buttons */
 .low-social {
-  padding: 14px 15pxs;
+  display: flex;
+  justify-content: center;
 }
 
 .low-social a {
   padding: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .low-social i:hover {
@@ -684,10 +703,10 @@ nav ul li a:hover {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(63, 51, 51, 0.644);
+  background: rgb(0, 1, 18);
+  background: linear-gradient(0deg, rgba(0, 1, 18, 1) 0%, rgba(0, 31, 92, 1) 100%);
   color: white;
   text-align: center;
-  border-radius: 20px;
 }
 
 .footer p {
