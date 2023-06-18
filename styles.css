@@ -416,6 +416,7 @@ nav ul li a:hover::before {
   height: 15px;
   background: rgba(255, 255, 255, 0.3);
   margin: 0 12px;
+  cursor: pointer;
 }
 
 .carousel__indicator.current-slide {
