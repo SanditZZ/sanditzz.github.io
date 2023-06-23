@@ -160,9 +160,13 @@ nav {
   width: 100%;
   align-items: center;
   padding: 1px 50px;
-  background: rgba(0, 0, 0, 0);
   transition: .5s;
   z-index: 10;
+}
+
+/* navbar background when not at the top */
+.nav_black {
+  background-color: var(--primary-bg-color);
 }
 
 /* Home Logo in Nav Bar */
@@ -338,8 +342,9 @@ nav ul li a:hover::before {
 #hero h1 {
   display: block;
   width: fit-content;
+  margin: 1rem;
   font-family: 'Days One', sans-serif;
-  font-size: 10rem;
+  font-size: 13rem;
   position: relative;
   /* color: var(--primary-text-color); */
   letter-spacing: 0.05em;
@@ -348,7 +353,7 @@ nav ul li a:hover::before {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
 }
 
 #hero p {
@@ -805,7 +810,7 @@ nav ul li a:hover::before {
   }
 
   #hero .hero h1 {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 
   #hero .hero p {
@@ -881,6 +886,14 @@ nav ul li a:hover::before {
 }
 
 @media (max-width: 420px) {
+  #hero .hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero .hero p {
+    font-size: 1.5rem;
+  }
+
   .img-slider {
     width: 330px;
     height: 350px;
