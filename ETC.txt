@@ -1,0 +1,26 @@
+-- Website 1 page scroll website --
+Highlight Models
+Contact phone
+About
+Social Media icons links - FB, LINE, Phone
+Newsletters
+Locations
+Privacy, cookie, copyright
+404
+
+-- Features to have --
+Responsive Design - header & footer
+Pop-up image
+Loading animation
+Persistent side bar
+Transition Animations
+Pressed Animations
+Form
+Click to go back top
+Custom Slider
+Theme Switcher
+Gradient Text Title
+
+-- Security & Plugins --
+SSL Cert
+SEO

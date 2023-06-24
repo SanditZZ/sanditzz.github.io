@@ -64,7 +64,6 @@ i {
 }
 
 img {
-  height: 400px;
   width: 100%;
   object-fit: cover;
 }
@@ -83,7 +82,7 @@ body {
 }
 
 p {
-  color: var(--primary-text-color);
+  color: var(--seconday-text-color);
   text-align: left;
   font-size: 1.4rem;
   line-height: 1.9rem;
@@ -103,6 +102,67 @@ p {
 }
 
 /* End of Reveal Elements on Scroll Down */
+
+/* Popup Section */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+  transition: all 1s;
+}
+
+.contentBox {
+  position: relative;
+  width: 650px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.99);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contentBox .imgBx {
+  position: relative;
+  width: 130px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentBox .imgBx img {
+  position: relative;
+  max-width: 115px;
+}
+
+.contentBox .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 5rem;
+  line-height: 2.5rem;
+}
+
+.contentBox .content p {
+  margin: 0px;
+}
+
+.contentBox .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: var(--primary-color);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* End of Popup Section */
 
 /* Scroll Up Button */
 .scrollTop {
@@ -340,7 +400,7 @@ nav ul li a:hover::before {
 }
 
 #hero h1 {
-  transition: all 2s;
+  /* transition: all 2s ease; */
   display: block;
   width: fit-content;
   margin: -16rem;
