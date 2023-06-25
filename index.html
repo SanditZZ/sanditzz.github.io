@@ -12,6 +12,10 @@
 
 	<title>Project A</title>
 	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -73,11 +77,37 @@
 				<!-- <p>This is where it all begins.</p> -->
 			</div>
 		</div>
+		<div class="banner--fadeBottom"></div>
 	</section>
 	<!-- End of Hero Section -->
 
+	<!-- Swiper Section -->
+	<div class="swiper">
+		<!-- Additional required wrapper -->
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide"><img src="img/car1low.jpg" draggable="false" alt=""></div>
+			<div class="swiper-slide"><img src="img/car2low.jpg" draggable="false" alt=""></div>
+			<div class="swiper-slide"><img src="img/car3low.jpg" draggable="false" alt=""></div>
+		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+
+		<!-- If we need navigation buttons -->
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+
+		<!-- If we need scrollbar -->
+		<div class="swiper-scrollbar"></div>
+	</div>
+
+	<!-- End of Swiper Section -->
+
 	<!-- Carousel Section  -->
 	<section id="carousel-1">
+		<div class="carousel-txt">
+			<h1>Check out our latest deals</h1>
+		</div>
 		<div class="carousel">
 			<button class="carousel__button carousel__button--left is-hidden">
 				<i class="fa-solid fa-arrow-left fa-3x"></i>
@@ -107,40 +137,6 @@
 		</div>
 	</section>
 	<!-- End of Carousel Section -->
-
-	<!-- Image Slider Section 
-	<section id="img-slider">
-		<div class="img-slider">
-			<div class="slide active">
-				<img src="/img/car3low.jpg" alt="">
-				<div class="info">
-					<h2>Slide 01</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-				</div>
-			</div>
-			<div class="slide">
-				<img src="/img/car6low.jpg" alt="">
-				<div class="info">
-					<h2>Slide 02</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-				</div>
-			</div>
-			<div class="slide">
-				<img src="/img/car4low.jpg" alt="">
-				<div class="info">
-					<h2>Slide 03</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-				</div>
-			</div>
-			<div class="navigation">
-				<div class="btn active"></div>
-				<div class="btn"></div>
-				<div class="btn"></div>
-			</div>
-		</div>
-
-	</section>
- 	End of Image Slider Section -->
 
 	<!-- Service Section -->
 	<section id="services">
@@ -227,6 +223,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/popup.js"></script>
 	<script type="text/javascript" src="js/navbar.js"></script>
+	<script src="js/swiper.js"></script>
 	<script src="js/carousel.js"></script>
 	<script type="text/javascript" src="js/scroll-up-button.js"></script>
 	<script type="text/javascript" src="js/reveal-element.js"></script>

@@ -11,6 +11,8 @@ html {
   --seconday-text-color: white;
 
   --primary-bg-color: black;
+
+  --primary-font-family: 'Poppins', sans-serif;
 }
 
 /* End of Variables */
@@ -65,6 +67,7 @@ i {
 
 img {
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -86,6 +89,33 @@ p {
   text-align: left;
   font-size: 1.4rem;
   line-height: 1.9rem;
+}
+
+.bg-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8));
+}
+
+.section-header {
+  padding-top: 5.625em;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 0.5em;
+  }
+
+  .line-red {
+    margin: 2.5em auto 2.9375em auto;
+  }
+}
+
+.line-red {
+  display: block;
+  width: 4em;
+  height: 0.1875em;
+  margin: 0 auto;
+  background: #f38181;
 }
 
 /* Reveal Elements on Scroll Down */
@@ -296,7 +326,6 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--primary-color);
   transition: .4s;
 }
 
@@ -317,7 +346,6 @@ nav ul li a:hover {
 }
 
 .top-social i:hover {
-  color: var(--primary-color);
   transition: .6s;
   transform: scale(1.2);
 }
@@ -337,7 +365,7 @@ nav ul li a::after {
   position: absolute;
   width: 100%;
   height: 0.1rem;
-  background-color: #000000;
+  background-color: #ffffff;
   bottom: 0;
   left: 0;
 }
@@ -378,6 +406,8 @@ nav ul li a:hover::before {
   background-repeat: no-repeat; */
   position: relative;
   z-index: 1;
+  background: rgb(0, 6, 31);
+  background: linear-gradient(0deg, rgba(0, 6, 31, 1) 19%, rgb(2, 20, 56) 97%);
 }
 
 #hero::after {
@@ -425,15 +455,36 @@ nav ul li a:hover::before {
 #hero img {
   position: absolute;
   height: 100%;
-  top: 100px;
+  top: 50px;
   left: -35px;
+}
+
+.banner--fadeBottom {
+  margin-top: 35px;
+  height: 5rem;
+  background-image: linear-gradient(180deg, transparent, rgba(0, 8, 27, 0.603), #00021a);
 }
 
 /* End of Hero Section */
 
+/* Swiper Section */
+.swiper {
+  cursor: pointer;
+  max-width: 50%;
+  max-height: 30rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+
+/* End of Swiper Section */
+
 /* Carousel Section */
 #carousel-1 {
-  padding: 10rem 10rem;
+  padding: 5rem 10rem;
 }
 
 .carousel {
@@ -441,6 +492,14 @@ nav ul li a:hover::before {
   height: 600px;
   width: 85%;
   margin: 0 auto;
+}
+
+.carousel-txt {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
 .carousel__image {
@@ -518,6 +577,61 @@ nav ul li a:hover::before {
 }
 
 /* End of Carousel Section */
+
+/* Slider Section */
+.slider {
+  position: relative;
+  padding: 0 22.5vw;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  user-select: none;
+  cursor: grab;
+  z-index: 2;
+
+  &__inner {
+    display: flex;
+    position: relative;
+  }
+}
+
+.slide {
+  overflow: hidden;
+
+  &:first-child {
+    position: relative;
+  }
+
+  &:not(:first-child) {
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  &__inner {
+    position: relative;
+    overflow: hidden;
+    width: 55vw;
+    padding-top: 56.5%;
+  }
+
+  img {
+    display: none;
+
+    /*
+    height: 100%;
+    width: 140%;
+    position: absolute;
+    top: 0;
+    left: -20%;
+    object-fit: cover;
+    will-change: transform;
+    */
+  }
+}
+
+
+/* End of Slider Section */
 
 /* Image Slider Section 
 #img-slider {
@@ -814,7 +928,6 @@ nav ul li a:hover::before {
 }
 
 .low-social i:hover {
-  color: var(--primary-color);
   transition: .6s;
   transform: scale(1.2);
 }
@@ -918,6 +1031,22 @@ nav ul li a:hover::before {
     transition: opacity 250ms, display 200ms;
     opacity: 0;
   }
+
+  .swiper {
+    direction: vertical;
+    margin: 10rem;
+    max-width: 100%;
+    max-height: 12rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    visibility: hidden;
+  }
+
+  /* .swiper img {
+    object-fit: cover;
+  } */
 
   .img-slider {
     width: 600px;

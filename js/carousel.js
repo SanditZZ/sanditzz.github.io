@@ -5,6 +5,34 @@ const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 
+// const carousel = document.querySelectorAll('.carousel__track');
+
+// let isDragStart = false, prevPageX, prevScrollLeft;
+
+// const dragStart = (e) => {
+//     // updating global variables value on mouse down event
+//     isDragStart = true;
+//     prevPageX = e.pageX;
+//     prevScrollLeft = carousel.scrollLeft;
+// }
+
+// let dragging = (e) => {
+//     // scrolling images/carousel to left according to mouse pointer
+//     if(!isDragStart) return;
+//     e.preventDefault();
+//     let positionDiff = e.pageX - prevPageX;
+//     carousel.scrollLeft = prevScrollLeft - positionDiff;
+// }
+
+// const dragStop = () => {
+//     isDragStart = false;
+// }
+
+// carousel.addEventListener("mousedown", dragStart);
+// carousel.addEventListener("mouseover", dragging);
+// carousel.addEventListener("mouseup", dragStop);
+
+
 const slideWidth = slides[0].getBoundingClientRect().width;
 // console.log(slideWidth);
 
