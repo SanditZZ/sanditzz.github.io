@@ -539,7 +539,7 @@ span.swiper-pagination-bullet {
 
 #services .service-item {
   border-radius: 10px;
-  padding: 30px;
+  padding: 2rem 2rem;
   position: relative;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
@@ -797,6 +797,18 @@ span.swiper-pagination-bullet {
     flex-direction: column-reverse;
   }
 
+  #services .service-item h1 {
+    font-size: .8rem;
+  }
+
+  #services .service-item h2 {
+    font-size: 1.4rem;
+  }
+
+  #services .service-item p {
+    font-size: 1.2rem;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -825,6 +837,10 @@ span.swiper-pagination-bullet {
 
   #services .service-top p {
     font-size: 1rem;
+  }
+
+  #services .service-item p {
+    font-size: 0.9rem;
   }
 
 }
