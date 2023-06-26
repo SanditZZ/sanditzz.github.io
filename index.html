@@ -20,7 +20,7 @@
 
 <body>
 	<!-- Scroll Up Button -->
-	<div class="scrollTop" onclick="scrollToTop();"></div>
+	<div class="scrollTop" onclick="scrollToTop();"><i class="fa-solid fa-arrow-up fa-2x"></i></div>
 	<!-- End of Scroll Up Button -->
 
 	<!-- Popup Section -->
@@ -52,7 +52,7 @@
 			</div>
 
 			<ul class="nav-middle-buttons">
-				<li><a href="#carousel-1">Promotions</a></li>
+				<li><a href="#swiper-deals">Promotions</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#content">Events</a></li>
 				<li><a href="#contact">Contact</a></li>
@@ -70,28 +70,25 @@
 
 	<!-- Hero Section -->
 	<section id="hero">
-		<div class="hero container">
-			<div>
-				<h1>Welcome</h1>
-				<img src="/img/car_cutout1.png">
-				<!-- <p>This is where it all begins.</p> -->
-			</div>
+		<div class="hero">
+			<h1>Welcome</h1>
+			<img src="/img/car_cutout1.png">
+			<!-- <p>This is where it all begins.</p> -->
 		</div>
-		<div class="banner--fadeBottom"></div>
 	</section>
 	<!-- End of Hero Section -->
 
 	<!-- Swiper Section -->
-	<div class="swiper-txt center">
+	<div id="swiper-deals" class="swiper-txt center">
 		<h1>Check out our latest deals</h1>
 	</div>
 	<div class="swiper">
 		<!-- Additional required wrapper -->
 		<div class="swiper-wrapper">
 			<!-- Slides -->
-			<div class="swiper-slide"><img src="img/car1low.jpg" draggable="false" alt=""></div>
-			<div class="swiper-slide"><img src="img/car2low.jpg" draggable="false" alt=""></div>
-			<div class="swiper-slide"><img src="img/car3low.jpg" draggable="false" alt=""></div>
+			<div class="swiper-slide"><img class="swiper-img" src="img/car-deal01.jpg" draggable="false" alt=""></div>
+			<div class="swiper-slide"><img class="swiper-img" src="img/car-deal02.jpg" draggable="false" alt=""></div>
+			<div class="swiper-slide"><img class="swiper-img" src="img/car-deal03.jpg" draggable="false" alt=""></div>
 		</div>
 		<!-- If we need pagination -->
 		<div class="swiper-pagination"></div>
@@ -115,24 +112,19 @@
 
 			<div class="service-bottom-grid">
 				<div class="service-item grid-col-span-2">
-					<div class="icon"><i class="fa-solid fa-gear fa-4x"></i></div>
+					<div class="icon"><i class="fa-solid fa-people-group fa-4x"></i></div>
 					<h2>The Best Team</h2>
 					<p>We have the best people to serve you</p>
 				</div>
 				<div class="service-item">
-					<div class="icon"><i class="fa-solid fa-gear fa-4x"></i></div>
+					<div class="icon"><i class="fa-solid fa-hand-fist fa-4x"></i></div>
 					<h2>Expert Skills</h2>
 					<p>We take care of your business for you</p>
 				</div>
 				<div class="service-item">
-					<div class="icon"><i class="fa-solid fa-gear fa-4x"></i></div>
+					<div class="icon"><i class="fa-solid fa-gem fa-4x"></i></div>
 					<h2>Quality Items</h2>
 					<p>We offer the best quality items</p>
-				</div>
-				<div class="service-item grid-col-span-2">
-					<div class="icon"><i class="fa-solid fa-gear fa-4x"></i></div>
-					<h2>Experience</h2>
-					<p>We have 20+ years of experience</p>
 				</div>
 			</div>
 		</div>
@@ -186,7 +178,6 @@
 	<script type="text/javascript" src="js/popup.js"></script>
 	<script type="text/javascript" src="js/navbar.js"></script>
 	<script src="js/swiper.js"></script>
-	<script src="js/carousel.js"></script>
 	<script type="text/javascript" src="js/scroll-up-button.js"></script>
 	<script type="text/javascript" src="js/reveal-element.js"></script>
 </body>
