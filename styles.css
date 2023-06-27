@@ -293,7 +293,7 @@ nav {
   margin-inline: 5px;
   list-style-type: none;
   display: inline-block;
-  padding: 10px 25px;
+  padding: .3rem 25px;
   /* background-color: rgba(255, 255, 255, 0.466); */
   /* border: 0.2rem solid; */
   border-color: #ddddddd3;
@@ -706,7 +706,7 @@ span.swiper-pagination-bullet {
 @media (max-width:1160px) {
 
   nav {
-    padding: 15px 0px;
+    padding: 5px 0px;
     justify-content: center;
     flex-direction: column;
     height: 5%;
@@ -721,8 +721,8 @@ span.swiper-pagination-bullet {
   }
 
   .home-logo-container {
-    width: 220px;
-    height: 25px;
+    width: 10rem;
+    height: 1rem;
   }
 
   #hero .hero h1 {
@@ -736,7 +736,7 @@ span.swiper-pagination-bullet {
   }
 
   #services {
-    padding: 2rem;
+    padding: 2rem 0rem 8rem;
   }
 
   #services .service-bottom-grid {
@@ -801,6 +801,11 @@ span.swiper-pagination-bullet {
     right: 40px;
     width: 60px;
     height: 60px;
+  }
+
+  .home-logo-container {
+    width: 7rem;
+    height: 1.5rem;
   }
 
   nav ul li {
