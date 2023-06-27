@@ -573,8 +573,19 @@ span.swiper-pagination-bullet {
 
 /* End of Service Section */
 
-/* Promotion Section */
-.middlebody {
+/* Parallax Image/Video Section */
+.parallax-ctn {
+  height: 50rem;
+  width: 100%;
+}
+
+.parallax-ctn .ukiyo {
+  height: 100%;
+  width: 100%;
+}
+
+/* Events Section */
+.events {
   padding: 10px 100px 100px;
   min-height: 80vh;
   display: flex;
@@ -582,23 +593,23 @@ span.swiper-pagination-bullet {
   align-items: center;
 }
 
-.middlebody .content {
+.events .events-content {
   max-width: 600px;
   text-align: center;
 }
 
-/* Text in Middlebody Content */
-.middlebody .content h2 {
+/* Text in events Content */
+.events .events-content h2 {
   font-size: 3em;
   color: var(--primary-text-color);
 }
 
-.middlebody .content p {
+.events .events-content p {
   font-size: 1em;
   color: var(--seconday-text-color);
 }
 
-.middlebody .content a {
+.events .events-content a {
   display: inline-block;
   background: #fff;
   color: #000;
@@ -609,11 +620,11 @@ span.swiper-pagination-bullet {
   border-radius: 20px;
 }
 
-.middlebody .img {
+.events .img {
   margin-left: 100px;
 }
 
-.middlebody i {
+.events i {
   filter: invert(0);
   max-width: 400px;
 }
@@ -738,17 +749,17 @@ span.swiper-pagination-bullet {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   }
 
-  .middlebody {
-    padding: 150px 20px 130px;
+  .events {
+    padding: 5rem 3rem;
     flex-direction: column-reverse;
   }
 
-  .middlebody .img {
+  .events .img {
     margin-left: 0px;
     padding-top: 0px;
   }
 
-  .middlebody .img i {
+  .events .img i {
     font-size: 500%;
   }
 
@@ -807,9 +818,8 @@ span.swiper-pagination-bullet {
     font-size: .8rem;
   }
 
-  .middlebody {
+  .events {
     padding: 175px 20px 130px;
-    flex-direction: column-reverse;
   }
 
   #services .service-item h1 {
@@ -856,6 +866,17 @@ span.swiper-pagination-bullet {
 
   #services .service-item p {
     font-size: 0.75rem;
+  }
+
+  /* Text in events Content */
+  .events .events-content h2 {
+    font-size: 2em;
+    color: var(--primary-text-color);
+  }
+
+  .events .events-content p {
+    font-size: 1em;
+    color: var(--seconday-text-color);
   }
 
   .contact {
