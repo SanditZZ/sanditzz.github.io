@@ -22,6 +22,8 @@ Theme Switcher
 Gradient Text Title
 Floating Icons (Brand Logos)
 Animating Banner (text)
+Add Emojis
+Animated Elements
 
 -- Security & Plugins --
 SSL Cert
