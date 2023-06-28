@@ -1,2 +1,2 @@
-const parallaxEle = document.querySelector('.ukiyo');
+const parallaxEle = document.querySelectorAll('.ukiyo');
 new Ukiyo(parallaxEle)
