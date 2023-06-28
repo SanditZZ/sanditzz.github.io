@@ -20,6 +20,8 @@ Click to go back top
 Custom Slider
 Theme Switcher
 Gradient Text Title
+Floating Icons (Brand Logos)
+Animating Banner (text)
 
 -- Security & Plugins --
 SSL Cert

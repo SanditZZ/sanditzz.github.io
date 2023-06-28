@@ -258,6 +258,7 @@ nav {
 .home-logo-container {
   width: 200px;
   height: 25px;
+  transition: .6s;
 }
 
 .home-logo-container:hover {
@@ -303,6 +304,7 @@ nav {
 
 nav ul li {
   position: relative;
+  transition: .6s;
 }
 
 nav ul li:hover {
@@ -337,6 +339,10 @@ nav ul li a:hover {
 .top-social a {
   padding: 10px;
   color: black;
+}
+
+.top-social i {
+  transition: .6s;
 }
 
 .top-social i:hover {
@@ -542,10 +548,11 @@ span.swiper-pagination-bullet {
   padding: 2rem 2rem;
   position: relative;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  transition: 700ms ease;
 }
 
 #services .service-item:hover {
-  transition: all ease-in-out 150ms;
+  transition: 300ms ease;
   background: transparent;
   border: solid;
 }
@@ -626,7 +633,94 @@ span.swiper-pagination-bullet {
 
 .events i {
   filter: invert(0);
-  max-width: 400px;
+  max-width: 40px;
+}
+
+.events-content .button {
+  transition: 500ms ease;
+}
+
+/* Weather Card Section */
+.weather-card {
+  width: 90%;
+  max-width: 20rem;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 10rem auto;
+  border-radius: 15px;
+  padding: 3rem 3rem;
+  text-align: center;
+}
+
+.weather-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.weather-search button {
+  transition: 700ms ease;
+  border-radius: 50px;
+  border: none;
+  padding: 6px 10px;
+}
+
+.weather-search button:hover {
+  transition: 700ms ease;
+  background-color: #000;
+}
+
+.weather-search button img {
+  max-height: 25px;
+  padding: 10px;
+}
+
+.error {
+  display: none;
+}
+
+.weather-search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 1rem 1rem;
+  height: 1rem;
+  width: 10rem;
+  border-radius: 15px;
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+.weather-ctn {
+  display: none;
+}
+
+.weather-card .details {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather-card .details .col {
+  margin-top: 1rem;
+  max-width: 10rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-card .details img {
+  max-width: auto;
+  max-height: 40px;
+}
+
+.weather-card .details p {
+  font-size: 1rem;
 }
 
 /* Contact Section */
@@ -658,6 +752,7 @@ span.swiper-pagination-bullet {
 .low-social a {
   padding: 10px;
   color: rgb(255, 255, 255);
+  transition: .6s;
 }
 
 .low-social i:hover {
