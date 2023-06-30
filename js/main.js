@@ -25,3 +25,14 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+// Smooth Scrolling when clicking on an anchor link
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
