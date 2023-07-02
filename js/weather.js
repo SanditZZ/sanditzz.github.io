@@ -45,3 +45,9 @@ async function checkWeather(city){
 searchBtn.addEventListener("click", ()=>{
     checkWeather(searchBox.value);
 })
+
+$(document).keydown(function(event) {
+    if (event.which === 13) {
+        checkWeather(searchBox.value);
+    }
+});
