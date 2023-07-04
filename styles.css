@@ -944,7 +944,7 @@ span.swiper-pagination-bullet {
   }
 
   nav {
-    padding: 5px 0px;
+    padding: 35px 0px;
     justify-content: center;
     flex-direction: column;
     height: 5%;
@@ -1028,8 +1028,8 @@ span.swiper-pagination-bullet {
     width: 250px;
     height: 350px;
     box-shadow: 0 0 10px #85888C;
-    margin: -50px 0 0 -150px;
-    padding: 125px 50px 50px 50px;
+    margin: -80px 0 0 -150px;
+    padding: 155px 50px 50px 50px;
     background-color: #F5F6FA;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
