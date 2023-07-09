@@ -38,6 +38,11 @@ html.lenis {
   --padding-section: 20rem 25rem 25rem;
 }
 
+::selection {
+  color: rgb(255, 255, 255);
+  background: #d761fb;
+}
+
 /* End of Variables */
 
 /* CUSTOM SCROLLBAR */
@@ -503,6 +508,7 @@ nav ul li a:hover::before {
 
 #hero h1 {
   /* transition: all 2s ease; */
+  user-select: none;
   font-family: 'Days One', sans-serif;
   font-size: 12rem;
   display: flex;
@@ -524,6 +530,7 @@ nav ul li a:hover::before {
 }
 
 .hero img {
+  user-select: none;
   position: absolute;
   max-width: 80%;
   top: 18rem
@@ -917,19 +924,21 @@ span.swiper-pagination-bullet {
 
 /* FOOTER */
 .footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background: var(--primary-bg-color);
+  background: rgba(50, 50, 50, 0.5);
   text-align: center;
+  padding: 10px 0px 10px 0px;
 }
 
-.footer p {
+.footer a {
   text-align: center;
   font-weight: 700;
+  text-decoration: none;
+  font-size: x-large;
 }
-
 
 /* Responsive Design */
 /* MAX */
