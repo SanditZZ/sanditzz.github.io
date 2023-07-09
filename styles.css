@@ -504,14 +504,15 @@ nav ul li a:hover::before {
 #hero h1 {
   /* transition: all 2s ease; */
   font-family: 'Days One', sans-serif;
-  font-size: 11rem;
+  font-size: 12rem;
   display: flex;
   justify-content: center;
   height: 15rem;
   /* color: var(--primary-text-color); */
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  background: rgb(131, 225, 250);
+  background: linear-gradient(90deg, rgba(131, 225, 250, 1) 0%, rgba(139, 237, 219, 1) 49%, rgba(152, 255, 191, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -926,6 +927,7 @@ span.swiper-pagination-bullet {
 
 .footer p {
   text-align: center;
+  font-weight: 700;
 }
 
 
